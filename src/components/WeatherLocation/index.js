@@ -5,7 +5,7 @@ import Location from './Location';
 import WeatherData from './WeatherData';
 import transformWeather from './../../services/transformWeather';
 //import {CLOUD, CLOUDY, SUN, RAIN, SNOW, WINDY} from './../../constant/weathers';
-import './WeatherData/styles.css';
+import './styles.css';
 
 // Creando const para llamar API:
 const api_key = '5c16a3406042c61c6e2017dbe1ed62f1';
@@ -52,7 +52,7 @@ class WeatherLocation extends Component { // extends es para informar a React qu
     const { onWeatherLocationClick } = this.props;
     const { city, data } = this.state;
     return (
-      <div align='center' className="weatherLocationCont" onClick={onWeatherLocationClick}>
+      <div align='center' className="weatherLocation" onClick={onWeatherLocationClick}>
         <Location className="location" city={city} />
         {data ? <WeatherData className="weatherDataCont" data={data} /> : <CircularProgress size={60} thickness={7} />}
       </div>

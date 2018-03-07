@@ -10,7 +10,7 @@ const Location = () => (
 
 const Location = ({city}) => (
   // const city = props.city; // const {city} = props; *es lo mismo
-  <div>
+  <div className="locationCont">
     <h1>
       {city}
     </h1>
