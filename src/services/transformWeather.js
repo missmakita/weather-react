@@ -1,8 +1,14 @@
-import React, { Component } from 'react';
-import Location from './../components/WeatherLocation/Location';
-import WeatherData from './../components/WeatherLocation/WeatherData/index';
-import { CLOUD, CLOUDY, SUN, RAIN, SNOW, WINDY, THUNDER, DRIZZLE } from './../constant/weathers';
-import './../components/WeatherLocation/WeatherData/styles.css';
+// no va import react, hace llamados a un componente import React, { Component } from 'react';
+import {
+  CLOUD,
+  CLOUDY,
+  SUN,
+  RAIN,
+  SNOW,
+  WINDY,
+  THUNDER,
+  DRIZZLE
+} from './../constant/weathers';
 
 const getWeatherState = weather => {
   const { id } = weather[0];
