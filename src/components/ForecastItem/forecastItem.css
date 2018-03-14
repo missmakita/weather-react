@@ -1,0 +1,29 @@
+.forecastItem {
+  margin-bottom: 1rem;
+  background-color: #fff;
+  padding: 0.5rem;
+}
+
+.weekDay {
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #009191;
+}
+
+@media only screen and (min-width: 768px) {
+  .forecastItem {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .forecastItem {
+    padding: 1.5rem;
+  }
+}
+
+
+
+

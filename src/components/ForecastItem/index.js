@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import WeatherData from './../WeatherLocation/WeatherData';
+import './forecastItem.css';
 
 // const data = {
 //   temperature: 10,
@@ -10,9 +11,8 @@ import WeatherData from './../WeatherLocation/WeatherData';
 // }
 
 const ForecastItem = ({ weekDay, hour, data }) => (
-
-  <div>
-    <div>{weekDay} - {hour} hr</div>
+  <div className="forecastItem">
+    <div className="weekDay">{weekDay} - {hour} hr</div>
     <WeatherData data={data}></WeatherData>
   </div>
 )

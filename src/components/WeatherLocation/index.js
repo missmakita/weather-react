@@ -36,18 +36,6 @@ class WeatherLocation extends Component { // extends es para informar a React qu
     });
   }
 
-  /*componentDidMount() {
-    console.log('componentDidMount'); // Se ejecuta después del Render
-  }
-
-  componentWillUpdate() {
-    console.log('componentWillUpdate');
-  }
-
-  componentDidUpdate() {
-    console.log('componentDidUpdate');
-  } */
-
   render = () => {
     const { onWeatherLocationClick } = this.props;
     const { city, data } = this.state;

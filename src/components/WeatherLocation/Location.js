@@ -11,9 +11,9 @@ const Location = () => (
 const Location = ({city}) => (
   // const city = props.city; // const {city} = props; *es lo mismo
   <div className="locationCont">
-    <h1>
+    <h2>
       {city}
-    </h1>
+    </h2>
   </div>
 );
 

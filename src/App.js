@@ -28,12 +28,8 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <Grid>
-          <Row>
-            <Col xs={12}>
-              <AppBar title="Weather Location" />
-            </Col>
-          </Row>
+        <AppBar title="Weather Location" />
+        <Grid fluid>
           <Row>
             <Col xs={12} md={6}>
               <LocationListContainer
@@ -42,9 +38,7 @@ class App extends Component {
             </Col>
             <Col xs={12} md={6}>
               <Paper zDepth={4}>
-                <div className="detail">
-                  <ForecastExtendedContainer />
-                </div>
+                <ForecastExtendedContainer />
               </Paper>
             </Col>
           </Row>

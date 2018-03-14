@@ -1,20 +1,36 @@
 .weatherLocation {
-  color: #888;
-  font-family: 'Roboto', sans-serif;
-  box-shadow: 10px 10px 42px -12px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 12px;
-  box-shadow: border-box;
-  width: calc(100% - 20px);
-  min-width: 430px;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  padding: 0.5rem;
 }
 
-.locationCont {
-  width: 100%;
-  height: 4rem;
+.weatherState {
+  color: #009191;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
-.locationCont h1 {
-  margin: 0;
+.locationCont h2 {
+  font-size: 1.2rem;
 }
+
+.detail {
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .weatherLocation {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .weatherLocation {
+    padding: 1.5rem;
+  }
+}
+
