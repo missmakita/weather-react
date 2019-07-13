@@ -9,10 +9,8 @@ import './styles.css';
 
 // Creando const para llamar API:
 const api_key = '5c16a3406042c61c6e2017dbe1ed62f1';
-// const location = 'Santiago,scl';
 const units = 'metric';
 const url = 'http://api.openweathermap.org/data/2.5/weather';
-// const api_weather = `http://api.openweathermap.org/data/2.5/weather?q=${location}&units=${units}&appid=${api_key}`;
 
 // COMPONENTE DE CLASE
 class WeatherLocation extends Component { // extends es para informar a React que estoy creando un componente de clase, para poder crear componentes reutilizables
@@ -47,15 +45,6 @@ class WeatherLocation extends Component { // extends es para informar a React qu
     );
   }
 }
-
-/* COMPONENTE FUNCIONAL
-const WeatherLocation = () => (
-  <div align='center' className="weatherLocationCont">
-    <Location className="location" city={'Santiago, CL'} />
-    <WeatherData className="weatherDataCont" data={data} />
-  </div>
-);
-*/
 
 WeatherLocation.propTypes = {
   city: PropTypes.string.isRequired,

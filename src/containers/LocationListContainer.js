@@ -4,9 +4,9 @@ import { setCity } from './../actions';
 import LocationList from './../components/LocationList';
 
 class LocationsListContainer extends Component {
-  //Vamos a limpiar APP js para que sea libre y no depender de el.
+  // Vamos a limpiar APP js para que sea libre y no depender de el.
 
-  //traemos el app a  a container
+  // Traemos el app a container
 
   handlerSelectionClick = (city) => {
     console.log('handlerSelectionClick', city)
